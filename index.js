@@ -11,7 +11,9 @@ function convertFahrToCelsius(farh){
         }
         else{
             var Cel= (farh-32)*(5/9);
-            return Cel.toFixed(4)
+            var celNumber=Number(Cel.toFixed(4))
+            console.log(celNumber)
+            return celNumber
         }
     }
 
@@ -20,6 +22,7 @@ function convertFahrToCelsius(farh){
         return invalid
     }
 }
+
 
 
 // Task Two
@@ -70,7 +73,7 @@ function checkYuGiOh(n){
             }
     
             console.log(myArr)
-            return JSON.stringify(myArr)       
+            return myArr
         }
     }
     else {
